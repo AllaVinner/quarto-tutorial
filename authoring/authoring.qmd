@@ -1,0 +1,76 @@
+---
+# Document Metadata
+title: "Quarto Document"
+author: "Joel Ottosson"
+date: 'May 22, 2021'
+
+# Options to all formats
+toc: true
+number-sections: true
+highligh-style: pygments
+
+# Format specific options
+format: 
+    pdf:
+        geometry:
+            - top=30mm
+            - left=30mm
+    html:
+        code-fold: true
+---
+
+
+## Colors {seq-color}
+
+- Red
+- Green 
+- Blue
+
+## Shapes {seq-shapes}
+
+- Square
+- Circle
+- Triangle
+
+## Textures {seq-textures}
+
+- Smooth
+- Bumpy
+- Fuzzy
+
+
+Einstein's theory of special relatively that expresses the equivalence of mass and energy:
+
+$E = mc^{2}$
+
+
+
+## Overview
+
+See @fig-simple in @sec-plot for a demonstration of a simple plot. 
+
+See @eq-stddev to better understand standard deviation.
+
+## Plot {#sec-plot}
+
+```{python}
+#| label: fig-simple
+#| fig-cap: "Simple Plot"
+import matplotlib.pyplot as plt
+plt.plot([1,23,2,4])
+plt.show()
+```
+
+## Equation {#sec-equation}
+
+$$
+s = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (x_i - \overline{x})^2}
+$$ {#eq-stddev}
+
+
+::: {.callout-note}
+Note that there are five types of callouts, including:
+`note`, `tip`, `warning`, `caution`, and `important`.
+:::
+
+
